@@ -6,7 +6,7 @@ const colorInput=document.getElementById('colorPicker');
 const sizeInput=document.getElementById('sizePicker');
 const canvas=document.getElementById('pixelCanvas');
 
-// When size is submitted by the user, call makeGrid()
+// Create grid when user typed in a size
 sizeInput.addEventListener('click', makeGrid);
 
 // Create grid with width and heigth
