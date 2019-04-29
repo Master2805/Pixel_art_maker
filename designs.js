@@ -9,9 +9,10 @@ const canvas=document.getElementById('pixelCanvas');
 // When size is submitted by the user, call makeGrid()
 sizeInput.addEventListener('click', makeGrid);
 
+// Create grid with width and heigth
 function makeGrid(event) {
   event.preventDefault()
-  canvas.innerHTML=''; 
+  canvas.innerHTML='';
   let c=document.getElementById("inputWidth").value;
   let r=document.getElementById("inputHeight").value;
   for(let i=0; i<r; i++){
@@ -24,7 +25,7 @@ function makeGrid(event) {
   }
 }
 
-
+// add 'click'  event
 canvas.addEventListener('click', function(event){
   let colorPixel=event.target;
   if(colorPixel.tagName=='TD'){
